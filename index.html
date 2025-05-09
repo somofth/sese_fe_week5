@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show_info()">너는 누구야?</button>
+    
+    <script>
+        let Username = '김커피'
+        let userage = 132
+        let person = {
+            name: Username,
+            age: userage,
+            greet: function greet(){
+                alert('안녕하세요')
+            }
+        }
+        function show_info(){
+            alert('이름은 '+person.name+'이고 '+person.age+'살이야')
+            person.greet()
+        }
+    </script>
+</body>
+</html>
